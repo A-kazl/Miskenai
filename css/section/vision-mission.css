@@ -1,0 +1,71 @@
+.vision-mission {
+    padding: var(--section-pad) 0;
+    background: linear-gradient(
+        180deg,
+        #65A17F,
+        var(--color-green-black)
+    );
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.vm-left,
+.vm-right {
+    padding: clamp(2rem, 4vw, 3rem);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.04);
+    transition: transform var(--transition-normal);
+}
+
+.vm-left:hover,
+.vm-right:hover {
+    transform: translateY(-6px);
+    background: var(--color-green-black);
+}
+
+.vm-left h2,
+.vm-right h2 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-heavy);
+    font-size: var(--fs-heading);
+    color: var(--color-sage-light);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.vm-left p,
+.vm-right li {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--color-white);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.vm-left p {
+    max-width: 30ch;
+}
+
+.vm-right ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.vm-right li {
+    position: relative;
+    padding-left: var(--space-sm);
+}
+
+.vm-right li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-sage-light);
+}

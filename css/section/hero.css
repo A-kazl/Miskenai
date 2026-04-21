@@ -1,0 +1,59 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(22, 48, 32, 0.2),
+            rgba(22, 48, 32, 0.45)
+        ),
+        url('../../img/pagrindinis/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding) var(--space-xl);
+    transition: transform 0.1s linear;
+}
+
+.hero-eyebrow {
+    font-family: var(--font-accent);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-subheading);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-sage-light);
+    margin-bottom: var(--space-sm);
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-heavy);
+    font-size: var(--fs-display);
+    line-height: var(--lh-heading);
+    color: var(--color-white);
+    text-transform: uppercase;
+    max-width: 900px;
+}
+
+#heroTitle::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+#heroTitle.finished::after {
+    animation: none;
+    opacity: 0; /* hide cursor */
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
