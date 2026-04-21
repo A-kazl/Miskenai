@@ -1,0 +1,13 @@
+@import url('./base/variables.css');
+@import url('./base/base.css');
+
+@import url('./layout/layout.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/*@import url('./sectionIdentitetas/brand-identity.css');
+@import url('./sectionIdentitetas/forest.css');
+@import url('./sectionIdentitetas/color-palette.css');
+@import url('./sectionIdentitetas/logo-structure.css');*/
+
+@import url('./sectionIdentitetas/style2.css');

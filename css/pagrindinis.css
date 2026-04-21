@@ -5,6 +5,6 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 
-@import url('./section/hero.css');
-@import url('./section/introduction.css');
-@import url('./section/vision-mission.css');
+@import url('./sectionPagrindinis/hero.css');
+@import url('./sectionPagrindinis/introduction.css');
+@import url('./sectionPagrindinis/vision-mission.css');
